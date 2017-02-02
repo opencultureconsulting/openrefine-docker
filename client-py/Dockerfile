@@ -2,6 +2,7 @@ FROM alpine:latest
 MAINTAINER felixlohmeier <felixlohmeier@opencultureconsulting.de>
 # Client for batch processing with OpenRefine: https://github.com/PaulMakepeace/refine-client-py/
 # expects an OpenRefine container running with --name=refine-server
+# !!!LEGACY/DEPRECATED!!! Please use improved version at https://hub.docker.com/r/felixlohmeier/openrefine-client/
 
 # Install python, pip, wget, unzip and bash
 RUN apk add --no-cache \
