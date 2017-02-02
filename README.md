@@ -5,7 +5,7 @@
 * [GitHub Repository with Dockerbuild files](https://github.com/felixlohmeier/openrefine-docker)
 * [Docker Hub with docker images](https://hub.docker.com/r/felixlohmeier/openrefine/)
 
-These docker images are inspired by docker image [vimagick/openrefine](https://hub.docker.com/r/vimagick/openrefine/) and [psychemedia/openrefine](https://hub.docker.com/r/psychemedia/openrefine/).
+Dockerbuild files are inspired by [vimagick/openrefine](https://hub.docker.com/r/vimagick/openrefine/) and [psychemedia/openrefine](https://hub.docker.com/r/psychemedia/openrefine/).
 
 ### versions
 cf. [OpenRefine Releases](https://github.com/OpenRefine/OpenRefine/releases)
@@ -38,4 +38,4 @@ point your browser on host machine to http://localhost or point browser on any m
 
 ### batch processing with python client
 
-see https://hub.docker.com/r/felixlohmeier/openrefine-client/
+see https://hub.docker.com/r/felixlohmeier/openrefine-client/ for a command line interface (e.g. for usage in shell scripts)
