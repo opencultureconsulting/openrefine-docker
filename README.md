@@ -1,7 +1,9 @@
-# OpenRefine-docker
+# Docker container for OpenRefine Server
+
 [OpenRefine](http://openrefine.org/) is a free, open source power tool for working with messy data and improving it. These docker images are automatically build from released versions (2.6rc1, 2.6rc2) or from the official GitHub Repository (latest).
 
-GitHub Repository with Docker 
+* [GitHub Repository with Dockerbuild files](https://github.com/felixlohmeier/openrefine-docker)
+* [Docker Hub with docker images](https://hub.docker.com/r/felixlohmeier/openrefine/)
 
 These docker images are inspired by docker image [vimagick/openrefine](https://hub.docker.com/r/vimagick/openrefine/) and [psychemedia/openrefine](https://hub.docker.com/r/psychemedia/openrefine/).
 
