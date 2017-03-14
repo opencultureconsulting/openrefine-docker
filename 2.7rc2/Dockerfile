@@ -1,8 +1,8 @@
 FROM java:8-jre-alpine
 MAINTAINER felixlohmeier <felixlohmeier@opencultureconsulting.com>
-# OpenRefine 2.6 Release Candidate 2
+# OpenRefine 2.7 Release Candidate 2
 
-ENV OR_URL https://github.com/OpenRefine/OpenRefine/releases/download/2.6-rc.2/openrefine-linux-2.6-rc.2.tar.gz
+ENV OR_URL https://github.com/OpenRefine/OpenRefine/releases/download/2.7-rc.2/openrefine-linux-2.7-rc.2.tar.gz
 
 WORKDIR /app
 

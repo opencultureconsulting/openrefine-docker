@@ -1,7 +1,6 @@
 FROM java:8-jre-alpine
-MAINTAINER felixlohmeier <felixlohmeier@opencultureconsulting.de>
+MAINTAINER felixlohmeier <felixlohmeier@opencultureconsulting.com>
 # OpenRefine 2.7 Release Candidate 1
-# derived from docker image vimagick/openrefine for personal use
 
 ENV OR_URL https://github.com/OpenRefine/OpenRefine/releases/download/2.7-rc.1/openrefine-linux-2.7-rc.1.tar.gz
 
