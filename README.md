@@ -28,6 +28,9 @@ OpenRefine 2.6 Release Candidate 1 (2015-04-30) from java:8-jre-alpine **[2.6rc1
 OpenRefine Development Version (automated build) from ubuntu:trusty + jdk **[latest]**
 > docker pull felixlohmeier/openrefine
 
+OpenRefine Development Version (automated build) from ubuntu:trusty + jdk based on [fork](https://github.com/opencultureconsulting/OpenRefine) with pull request #1294 from @claussni to extend cross () **[dev-with-pr1294]**
+> docker pull felixlohmeier/openrefine:dev-with-pr1294
+
 ### usage
 > docker run -p 80:3333 felixlohmeier/openrefine:2.7
 
