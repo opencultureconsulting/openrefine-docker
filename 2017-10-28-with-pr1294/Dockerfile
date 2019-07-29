@@ -1,5 +1,5 @@
 FROM java:8-jre-alpine
-MAINTAINER felixlohmeier <felixlohmeier@opencultureconsulting.com>
+LABEL maintainer="felixlohmeier@opencultureconsulting.com"
 # OpenRefine snapshot 2017-10-28 with pull request #1294
 
 ENV OR_URL https://github.com/opencultureconsulting/OpenRefine/releases/download/2017-10-28-with-pr1294/openrefine-linux-2017-10-28-with-pr1294.tar.gz

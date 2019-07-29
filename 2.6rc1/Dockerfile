@@ -1,5 +1,5 @@
 FROM java:8-jre-alpine
-MAINTAINER felixlohmeier <felixlohmeier@opencultureconsulting.com>
+LABEL maintainer="felixlohmeier@opencultureconsulting.com"
 # OpenRefine 2.6 Release Candidate 1
 
 ENV OR_URL https://github.com/OpenRefine/OpenRefine/releases/download/v2.6-rc1/openrefine-linux-2.6-rc1.tar.gz
