@@ -14,11 +14,26 @@ cf. [OpenRefine Releases](https://github.com/OpenRefine/OpenRefine/releases)
 OpenRefine 3.2 (2019-07-16) from java:8-jre-alpine **[3.2] [latest]** 
 > docker pull felixlohmeier/openrefine:3.2
 
+OpenRefine 3.2 (2019-07-16) from java:9-jre-alpine **[3.2-java9]**
+> docker pull felixlohmeier/openrefine:3.2-java9
+
+OpenRefine 3.2 (2019-07-16) from java:10-jre-alpine **[3.2-java10]**
+> docker pull felixlohmeier/openrefine:3.2-java10
+
+OpenRefine 3.2 (2019-07-16) from java:11-jre-alpine **[3.2-java11]**
+> docker pull felixlohmeier/openrefine:3.2-java11
+
+OpenRefine 3.2 (2019-07-16) from java:12-jre-alpine **[3.2-java12]**
+> docker pull felixlohmeier/openrefine:3.2-java12
+
 OpenRefine 3.1 (2018-11-29) from java:8-jre-alpine **[3.1]**
 > docker pull felixlohmeier/openrefine:3.1
 
 OpenRefine 3.1 (2018-11-29) from openjdk:7-jre **[3.1-java7]**
 > docker pull felixlohmeier/openrefine:3.1-java7
+
+OpenRefine 3.1 (2018-11-29) from java:9-jre-alpine **[3.1-java9]**
+> docker pull felixlohmeier/openrefine:3.1-java9
 
 OpenRefine 3.0 (2018-09-16) from java:8-jre-alpine **[3.0]**
 > docker pull felixlohmeier/openrefine:3.0
@@ -26,14 +41,23 @@ OpenRefine 3.0 (2018-09-16) from java:8-jre-alpine **[3.0]**
 OpenRefine 3.0 (2018-09-16) from openjdk:7-jre **[3.0-java7]**
 > docker pull felixlohmeier/openrefine:3.0-java7
 
+OpenRefine 3.0 (2018-09-16) from java:9-jre-alpine **[3.0-java9]**
+> docker pull felixlohmeier/openrefine:3.0-java9
+
 OpenRefine 2.8 (2017-11-19) from java:8-jre-alpine **[2.8]**
 > docker pull felixlohmeier/openrefine:2.8
+
+OpenRefine 2.8 (2017-11-19) from java:9-jre-alpine **[2.8-java9]**
+> docker pull felixlohmeier/openrefine:2.8-java9
 
 OpenRefine 2.8 (2017-11-19) from openjdk:7-jre **[2.8-java7]**
 > docker pull felixlohmeier/openrefine:2.8-java7
 
 OpenRefine 2.7 (2017-06-18) from java:8-jre-alpine **[2.7]**
 > docker pull felixlohmeier/openrefine:2.7
+
+OpenRefine 2.7 (2017-06-18) from java:9-jre-alpine **[2.7-java9]**
+> docker pull felixlohmeier/openrefine:2.7-java9
 
 OpenRefine 2.7 (2017-06-18) from openjdk:7-jre **[2.7-java7]**
 > docker pull felixlohmeier/openrefine:2.7-java7
