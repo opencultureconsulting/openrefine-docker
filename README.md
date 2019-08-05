@@ -29,9 +29,6 @@ OpenRefine 3.2 (2019-07-16) from adoptopenjdk/openjdk12:alpine-jre **[3.2-java12
 OpenRefine 3.1 (2018-11-29) from openjdk:8-jre-alpine **[3.1]**
 > docker pull felixlohmeier/openrefine:3.1
 
-OpenRefine 3.1 (2018-11-29) from openjdk:7-jre **[3.1-java7]**
-> docker pull felixlohmeier/openrefine:3.1-java7
-
 OpenRefine 3.1 (2018-11-29) from adoptopenjdk/openjdk9:alpine-slim **[3.1-java9]**
 > docker pull felixlohmeier/openrefine:3.1-java9
 
