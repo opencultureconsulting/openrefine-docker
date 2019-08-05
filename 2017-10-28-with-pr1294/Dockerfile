@@ -7,7 +7,7 @@ ENV OR_URL https://github.com/opencultureconsulting/OpenRefine/releases/download
 WORKDIR /app
 
 RUN set -xe \
-    && apk add --no-cache bash curl jq tar \
+    && apk add --no-cache bash curl grep tar \
     && curl -sSL ${OR_URL} | tar xz --strip 1
 
 VOLUME /data
