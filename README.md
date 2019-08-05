@@ -11,7 +11,7 @@ Dockerbuild files are inspired by [vimagick/openrefine](https://hub.docker.com/r
 ### versions
 cf. [OpenRefine Releases](https://github.com/OpenRefine/OpenRefine/releases)
 
-OpenRefine 3.2 (2019-07-16) from openjdk:8-jre-alpine **[3.2] & [latest] **
+OpenRefine 3.2 (2019-07-16) from openjdk:8-jre-alpine **[3.2]** & **[latest]**
 > docker pull felixlohmeier/openrefine:3.2
 
 OpenRefine 3.2 (2019-07-16) from adoptopenjdk/openjdk9:alpine-slim **[3.2-java9]**
@@ -37,9 +37,6 @@ OpenRefine 3.1 (2018-11-29) from adoptopenjdk/openjdk9:alpine-slim **[3.1-java9]
 
 OpenRefine 3.0 (2018-09-16) from openjdk:8-jre-alpine **[3.0]**
 > docker pull felixlohmeier/openrefine:3.0
-
-OpenRefine 3.0 (2018-09-16) from openjdk:7-jre **[3.0-java7]**
-> docker pull felixlohmeier/openrefine:3.0-java7
 
 OpenRefine 3.0 (2018-09-16) from adoptopenjdk/openjdk9:alpine-slim **[3.0-java9]**
 > docker pull felixlohmeier/openrefine:3.0-java9
