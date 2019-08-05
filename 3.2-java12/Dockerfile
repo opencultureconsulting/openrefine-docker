@@ -1,4 +1,4 @@
-FROM java:12-jre-alpine
+FROM adoptopenjdk/openjdk12:alpine-jre
 LABEL maintainer="felixlohmeier@opencultureconsulting.com"
 # OpenRefine 3.2
 

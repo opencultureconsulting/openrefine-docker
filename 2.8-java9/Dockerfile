@@ -1,4 +1,4 @@
-FROM java:9-jre-alpine
+FROM adoptopenjdk/openjdk9:alpine-slim
 LABEL maintainer="felixlohmeier@opencultureconsulting.com"
 # OpenRefine 2.8
 
