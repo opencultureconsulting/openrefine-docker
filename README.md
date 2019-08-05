@@ -56,9 +56,6 @@ OpenRefine 2.8 (2017-11-19) from openjdk:7-jre **[2.8-java7]**
 OpenRefine 2.7 (2017-06-18) from openjdk:8-jre-alpine **[2.7]**
 > docker pull felixlohmeier/openrefine:2.7
 
-OpenRefine 2.7 (2017-06-18) from adoptopenjdk/openjdk9:alpine-slim **[2.7-java9]**
-> docker pull felixlohmeier/openrefine:2.7-java9
-
 OpenRefine 2.7 (2017-06-18) from openjdk:7-jre **[2.7-java7]**
 > docker pull felixlohmeier/openrefine:2.7-java7
 
