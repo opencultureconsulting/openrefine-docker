@@ -84,7 +84,9 @@ OpenRefine [fork](https://github.com/opencultureconsulting/OpenRefine) with exte
 > docker pull felixlohmeier/openrefine:2017-10-28-with-pr1294
 
 ### Usage
-> docker run -p 3333:3333 felixlohmeier/openrefine:latest
+```
+docker run -p 3333:3333 felixlohmeier/openrefine:latest
+```
 
 point your browser on host machine to http://localhost:3333 (or on any machine within your network)
 
