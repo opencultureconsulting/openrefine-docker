@@ -1,4 +1,6 @@
-# Docker container for OpenRefine Server
+# Docker container for OpenRefine
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/331a584a806e45feba63ed8871329c7a)](https://www.codacy.com/app/felixlohmeier/openrefine-docker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=opencultureconsulting/openrefine-docker&amp;utm_campaign=Badge_Grade)
 
 [OpenRefine](http://openrefine.org/) is a free, open source power tool for working with messy data and improving it.
 These docker images are build from official released versions (3.2, 3.1, 3.0, 2.8, 2.7, 2.7rc2, 2.7rc1, 2.6rc2, 2.6rc1, 2.5, 2.1, 2.0) and from a fork (2017-10-28-with-pr1294).
@@ -8,7 +10,8 @@ These docker images are build from official released versions (3.2, 3.1, 3.0, 2.
 
 Dockerbuild files are inspired by [vimagick/openrefine](https://hub.docker.com/r/vimagick/openrefine/) and [psychemedia/openrefine](https://hub.docker.com/r/psychemedia/openrefine/).
 
-### versions
+### Versions
+
 cf. [OpenRefine Releases](https://github.com/OpenRefine/OpenRefine/releases)
 
 OpenRefine 3.2 (2019-07-16) from openjdk:8-jre-alpine **[3.2]** & **[latest]**
@@ -80,14 +83,16 @@ Google Refine 2.0 (2010-11-10) from openjdk:6-jre **[2.0-java6]**
 OpenRefine [fork](https://github.com/opencultureconsulting/OpenRefine) with extended cross (snapshot 2017-10-28 with pull request #1294) from openjdk:8-jre-alpine **[2017-10-28-with-pr1294]**
 > docker pull felixlohmeier/openrefine:2017-10-28-with-pr1294
 
-### usage
+### Usage
 > docker run -p 3333:3333 felixlohmeier/openrefine:latest
 
 point your browser on host machine to http://localhost:3333 (or on any machine within your network)
 
-### example for customized run command
+### Example for customized run command
 
-```docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefine:latest -i 0.0.0.0 -m 4G -d /data```
+```
+docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefine:latest -i 0.0.0.0 -m 4G -d /data
+```
 
 * automatically remove docker container when it exits
 * publish internal port 3333 to host port 80
@@ -96,6 +101,10 @@ point your browser on host machine to http://localhost:3333 (or on any machine w
 * increase java heap size to 4 GB
 * set refine workspace to /data
 
-### batch processing with python client
+### See also
 
-see https://hub.docker.com/r/felixlohmeier/openrefine-client/ for a command line interface (e.g. for usage in shell scripts)
+* Command line interface for OpenRefine: [openrefine-client](https://github.com/opencultureconsulting/openrefine-client/#docker)
+
+> docker pull felixlohmeier/openrefine-client
+
+* Linux Bash script to run OpenRefine in batch mode (import, transform, export): [openrefine-batch-docker.sh](https://github.com/opencultureconsulting/openrefine-batch/#docker)
