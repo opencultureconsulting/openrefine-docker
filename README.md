@@ -14,38 +14,45 @@ Dockerbuild files are inspired by [vimagick/openrefine](https://hub.docker.com/r
 
 cf. [OpenRefine Releases](https://github.com/OpenRefine/OpenRefine/releases)
 
-OpenRefine 3.2 (2019-07-16) from openjdk:8-jre-alpine **[3.2]** & **[latest]**
-> docker pull felixlohmeier/openrefine:3.2
+OpenRefine 3.2 (2019-07-16) from adoptopenjdk/openjdk12:alpine-jre **[3.2-java12]**
+
+> docker pull felixlohmeier/openrefine:3.2-java12
+
+OpenRefine 3.2 (2019-07-16) adoptopenjdk/openjdk11:alpine-jre **[3.2-java11]**
+
+> docker pull felixlohmeier/openrefine:3.2-java11
+
+OpenRefine 3.2 (2019-07-16) from openjdk:10-jre-alpine **[3.2-java10]**
+
+> docker pull felixlohmeier/openrefine:3.2-java10
 
 OpenRefine 3.2 (2019-07-16) from adoptopenjdk/openjdk9:alpine-slim **[3.2-java9]**
 > docker pull felixlohmeier/openrefine:3.2-java9
 
-OpenRefine 3.2 (2019-07-16) from openjdk:10-jre-alpine **[3.2-java10]**
-> docker pull felixlohmeier/openrefine:3.2-java10
+OpenRefine 3.2 (2019-07-16) from openjdk:8-jre-alpine **[3.2]** & **[latest]**
 
-OpenRefine 3.2 (2019-07-16) adoptopenjdk/openjdk11:alpine-jre **[3.2-java11]**
-> docker pull felixlohmeier/openrefine:3.2-java11
-
-OpenRefine 3.2 (2019-07-16) from adoptopenjdk/openjdk12:alpine-jre **[3.2-java12]**
-> docker pull felixlohmeier/openrefine:3.2-java12
-
-OpenRefine 3.1 (2018-11-29) from openjdk:8-jre-alpine **[3.1]**
-> docker pull felixlohmeier/openrefine:3.1
+> docker pull felixlohmeier/openrefine:3.2
 
 OpenRefine 3.1 (2018-11-29) from adoptopenjdk/openjdk9:alpine-slim **[3.1-java9]**
 > docker pull felixlohmeier/openrefine:3.1-java9
 
+OpenRefine 3.1 (2018-11-29) from openjdk:8-jre-alpine **[3.1]**
+
+> docker pull felixlohmeier/openrefine:3.1
+
+OpenRefine 3.0 (2018-09-16) from adoptopenjdk/openjdk9:alpine-slim **[3.0-java9]**
+
+> docker pull felixlohmeier/openrefine:3.0-java9
+
 OpenRefine 3.0 (2018-09-16) from openjdk:8-jre-alpine **[3.0]**
 > docker pull felixlohmeier/openrefine:3.0
 
-OpenRefine 3.0 (2018-09-16) from adoptopenjdk/openjdk9:alpine-slim **[3.0-java9]**
-> docker pull felixlohmeier/openrefine:3.0-java9
+OpenRefine 2.8 (2017-11-19) from adoptopenjdk/openjdk9:alpine-slim **[2.8-java9]**
+
+> docker pull felixlohmeier/openrefine:2.8-java9
 
 OpenRefine 2.8 (2017-11-19) from openjdk:8-jre-alpine **[2.8]**
 > docker pull felixlohmeier/openrefine:2.8
-
-OpenRefine 2.8 (2017-11-19) from adoptopenjdk/openjdk9:alpine-slim **[2.8-java9]**
-> docker pull felixlohmeier/openrefine:2.8-java9
 
 OpenRefine 2.8 (2017-11-19) from openjdk:7-jre **[2.8-java7]**
 > docker pull felixlohmeier/openrefine:2.8-java7
@@ -85,7 +92,7 @@ OpenRefine [fork](https://github.com/opencultureconsulting/OpenRefine) with exte
 
 ### Usage
 ```
-docker run -p 3333:3333 felixlohmeier/openrefine:latest
+docker run -p 3333:3333 felixlohmeier/openrefine:3.2
 ```
 
 point your browser on host machine to http://localhost:3333 (or on any machine within your network)
@@ -93,15 +100,15 @@ point your browser on host machine to http://localhost:3333 (or on any machine w
 ### Example for customized run command
 
 ```
-docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefine:latest -i 0.0.0.0 -m 4G -d /data
+docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefine:3.2 -i 0.0.0.0 -d /data -m 4G
 ```
 
-* automatically remove docker container when it exits
-* publish internal port 3333 to host port 80
-* mount host directory /home/felix/refine as working directory
-* make openrefine available in the network
-* increase java heap size to 4 GB
-* set refine workspace to /data
+* automatically remove docker container when it exits (`--rm`)
+* publish internal port 3333 to host port 80 (`-p 80:3333`)
+* mount host directory /home/felix/refine to container path /data (`-v /home/felix/refine:/data:z`) and set OpenRefine workspace to /data (`-d /data`)
+* use docker tag for OpenRefine version 3.2 (`:3.2`)
+* set Openrefine to be accessible from outside the container, i.e. from host (`-i 0.0.0.0`)
+* increase java heap size to 4G (`-m 4g`)
 
 ### See also
 
