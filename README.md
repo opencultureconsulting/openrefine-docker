@@ -75,8 +75,10 @@ docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefin
 
 * automatically remove docker container when it exits (`--rm`)
 * publish internal port 3333 to host port 80 (`-p 80:3333`)
-* mount host directory /home/felix/refine to container path /data (`-v /home/felix/refine:/data:z`) and set OpenRefine workspace to /data (`-d /data`)
-* use docker tag for OpenRefine version 3.2 (`:3.2`)
+* let OpenRefine read and write data in host directory
+  * mount host path /home/felix/refine to container path /data (`-v /home/felix/refine:/data:z`)
+  * set OpenRefine workspace to /data (`-d /data`)
+* pin docker tag 3.2 (i.e. OpenRefine version) (`:3.2`)
 * set Openrefine to be accessible from outside the container, i.e. from host (`-i 0.0.0.0`)
 * increase java heap size to 4G (`-m 4g`)
 
