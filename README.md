@@ -3,7 +3,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/331a584a806e45feba63ed8871329c7a)](https://www.codacy.com/app/felixlohmeier/openrefine-docker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=opencultureconsulting/openrefine-docker&amp;utm_campaign=Badge_Grade)
 
 [OpenRefine](http://openrefine.org/) is a free, open source power tool for working with messy data and improving it.
-These docker images are build from official released versions (3.2, 3.1, 3.0, 2.8, 2.7, 2.7rc2, 2.7rc1, 2.6rc2, 2.6rc1, 2.5, 2.1, 2.0) and from a fork (2017-10-28-with-pr1294).
+These docker images are build from official released versions (3.3, 3.2, 3.1, 3.0, 2.8, 2.7, 2.7rc2, 2.7rc1, 2.6rc2, 2.6rc1, 2.5, 2.1, 2.0) and from a fork (2017-10-28-with-pr1294).
 
 * [GitHub Repository with Dockerbuild files](https://github.com/felixlohmeier/openrefine-docker)
 * [Docker Hub with docker images](https://hub.docker.com/r/felixlohmeier/openrefine/)
@@ -14,6 +14,8 @@ Dockerbuild files are inspired by [vimagick/openrefine](https://hub.docker.com/r
 
 cf. [OpenRefine Releases](https://github.com/OpenRefine/OpenRefine/releases)
 
+OpenRefine 3.3 (2020-01-31) from openjdk:8-jre-alpine **[3.3]** & **[latest]**
+
 OpenRefine 3.2 (2019-07-16) from adoptopenjdk/openjdk12:alpine-jre **[3.2-java12]**
 
 OpenRefine 3.2 (2019-07-16) adoptopenjdk/openjdk11:alpine-jre **[3.2-java11]**
@@ -22,7 +24,7 @@ OpenRefine 3.2 (2019-07-16) from openjdk:10-jre-alpine **[3.2-java10]**
 
 OpenRefine 3.2 (2019-07-16) from adoptopenjdk/openjdk9:alpine-slim **[3.2-java9]**
 
-OpenRefine 3.2 (2019-07-16) from openjdk:8-jre-alpine **[3.2]** & **[latest]**
+OpenRefine 3.2 (2019-07-16) from openjdk:8-jre-alpine **[3.2]**
 
 OpenRefine 3.1 (2018-11-29) from adoptopenjdk/openjdk9:alpine-slim **[3.1-java9]**
 
@@ -62,7 +64,7 @@ OpenRefine [fork](https://github.com/opencultureconsulting/OpenRefine) with exte
 
 ### Usage
 ```
-docker run -p 3333:3333 felixlohmeier/openrefine:3.2
+docker run -p 3333:3333 felixlohmeier/openrefine:3.3
 ```
 
 point your browser on host machine to http://localhost:3333 (or on any machine within your network)
@@ -70,7 +72,7 @@ point your browser on host machine to http://localhost:3333 (or on any machine w
 ### Example for customized run command
 
 ```
-docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefine:3.2 -i 0.0.0.0 -d /data -m 4G
+docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefine:3.3 -i 0.0.0.0 -d /data -m 4G
 ```
 
 * automatically remove docker container when it exits (`--rm`)
@@ -78,7 +80,7 @@ docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefin
 * let OpenRefine read and write data in host directory
   * mount host path /home/felix/refine to container path /data (`-v /home/felix/refine:/data:z`)
   * set OpenRefine workspace to /data (`-d /data`)
-* pin docker tag 3.2 (i.e. OpenRefine version) (`:3.2`)
+* pin docker tag 3.3 (i.e. OpenRefine version) (`:3.3`)
 * set Openrefine to be accessible from outside the container, i.e. from host (`-i 0.0.0.0`)
 * increase java heap size to 4G (`-m 4g`)
 
