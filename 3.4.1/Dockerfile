@@ -1,8 +1,8 @@
 FROM openjdk:8-jre-alpine
 LABEL maintainer="felixlohmeier@opencultureconsulting.com"
-# OpenRefine 3.4
+# OpenRefine 3.4.1
 
-ENV OR_URL https://github.com/OpenRefine/OpenRefine/releases/download/3.4/openrefine-linux-3.4.tar.gz
+ENV OR_URL https://github.com/OpenRefine/OpenRefine/releases/download/3.4/openrefine-linux-3.4.1.tar.gz
 
 WORKDIR /app
 
