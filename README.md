@@ -1,6 +1,6 @@
 # Docker container for OpenRefine
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/331a584a806e45feba63ed8871329c7a)](https://www.codacy.com/app/felixlohmeier/openrefine-docker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=opencultureconsulting/openrefine-docker&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7bc99a51df354a1da1a67e6c1b34f55b)](https://www.codacy.com/gh/opencultureconsulting/openrefine-docker/dashboard)
 
 [OpenRefine](http://openrefine.org/) is a free, open source power tool for working with messy data and improving it.
 These docker images are build from official released versions (3.4.1, 3.4, 3.3, 3.2, 3.1, 3.0, 2.8, 2.7, 2.7rc2, 2.7rc1, 2.6rc2, 2.6rc1, 2.5, 2.1, 2.0) and from a fork (2017-10-28-with-pr1294).
