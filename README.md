@@ -14,6 +14,8 @@ Dockerbuild files are inspired by [vimagick/openrefine](https://hub.docker.com/r
 
 cf. [OpenRefine Releases](https://github.com/OpenRefine/OpenRefine/releases)
 
+OpenRefine 4.0-snapshot (2021-07-12) from openjdk:11-jre-alpine **[4.0-snapshot]**
+
 OpenRefine 3.4.1 (2020-09-24) from openjdk:8-jre-alpine **[3.4.1]** & **[latest]**
 
 OpenRefine 3.4 (2020-09-06) from openjdk:8-jre-alpine **[3.4]**
