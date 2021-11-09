@@ -3,7 +3,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7bc99a51df354a1da1a67e6c1b34f55b)](https://www.codacy.com/gh/opencultureconsulting/openrefine-docker/dashboard)
 
 [OpenRefine](http://openrefine.org/) is a free, open source power tool for working with messy data and improving it.
-These docker images are build from official released versions (3.4.1, 3.4, 3.3, 3.2, 3.1, 3.0, 2.8, 2.7, 2.7rc2, 2.7rc1, 2.6rc2, 2.6rc1, 2.5, 2.1, 2.0) and from a fork (2017-10-28-with-pr1294).
+These docker images are build from official released versions (3.5.0, 3.4.1, 3.4, 3.3, 3.2, 3.1, 3.0, 2.8, 2.7, 2.7rc2, 2.7rc1, 2.6rc2, 2.6rc1, 2.5, 2.1, 2.0) and from a fork (2017-10-28-with-pr1294).
 
 * [GitHub Repository with Dockerbuild files](https://github.com/felixlohmeier/openrefine-docker)
 * [Docker Hub with docker images](https://hub.docker.com/r/felixlohmeier/openrefine/)
@@ -16,7 +16,9 @@ cf. [OpenRefine Releases](https://github.com/OpenRefine/OpenRefine/releases)
 
 OpenRefine 4.0-snapshot (2021-07-12) from openjdk:11-jre-alpine **[4.0-snapshot]**
 
-OpenRefine 3.4.1 (2020-09-24) from openjdk:8-jre-alpine **[3.4.1]** & **[latest]**
+OpenRefine 3.5.0 (2021-11-07) from openjdk:8-jre-alpine **[3.5.0]** & **[latest]**
+
+OpenRefine 3.4.1 (2020-09-24) from openjdk:8-jre-alpine **[3.4.1]**
 
 OpenRefine 3.4 (2020-09-06) from openjdk:8-jre-alpine **[3.4]**
 
@@ -70,7 +72,7 @@ OpenRefine [fork](https://github.com/opencultureconsulting/OpenRefine) with exte
 
 ### Usage
 ```
-docker run -p 3333:3333 felixlohmeier/openrefine:3.4.1
+docker run -p 3333:3333 felixlohmeier/openrefine
 ```
 
 point your browser on host machine to http://localhost:3333 (or on any machine within your network)
@@ -78,7 +80,7 @@ point your browser on host machine to http://localhost:3333 (or on any machine w
 ### Example for customized run command
 
 ```
-docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefine:3.4.1 -i 0.0.0.0 -d /data -m 4G
+docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefine:3.5.0 -i 0.0.0.0 -d /data -m 4G
 ```
 
 * automatically remove docker container when it exits (`--rm`)
@@ -86,7 +88,7 @@ docker run --rm -p 80:3333 -v /home/felix/refine:/data:z felixlohmeier/openrefin
 * let OpenRefine read and write data in host directory
   * mount host path /home/felix/refine to container path /data (`-v /home/felix/refine:/data:z`)
   * set OpenRefine workspace to /data (`-d /data`)
-* pin docker tag 3.4.1 (i.e. OpenRefine version) (`:3.4.1`)
+* pin docker tag 3.5.0 (i.e. OpenRefine version) (`:3.5.0`)
 * set Openrefine to be accessible from outside the container, i.e. from host (`-i 0.0.0.0`)
 * increase java heap size to 4G (`-m 4g`)
 
